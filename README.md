@@ -10,11 +10,11 @@ git pull
 
 ## add new files
 
-git add <filename>
+git add filename
 
 ## commit changes
 
-git commit -am "<details>"
+git commit -am "details"
 
 ## push changes to master
 
