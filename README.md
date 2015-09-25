@@ -21,3 +21,7 @@ git commit -am "<details>"
 git push
 
 Then enter username and password.
+
+## storing password
+
+http://gitcredentialstore.codeplex.com/releases/view/106064
