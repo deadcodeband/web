@@ -95,7 +95,7 @@
 		/* ---------------------------------------------- /*
 		 * Home BG
 		/* ---------------------------------------------- */
-		
+
 		//screen height
 		$(".screen-height").height($(window).height());
 
@@ -117,8 +117,9 @@
 		  "assets/images/josh_console.jpg",
 		  "assets/images/davis_kit.jpg"
 		];
-
+		
 		var $bg = $("#home"),
+			$tbg = $(".temp_home"),
 			n = images.length,
 			c = 0; // Loop Counter
 
@@ -131,10 +132,10 @@
 		$bg.css({backgroundImage : "url("+images[c]+")"}); 
 
 		(function loopBg(){
-		  $bg.hide().css({backgroundImage : "url("+images[++c%n]+")"}).delay(2000).fadeTo(1200, 1, 
-			function(){
+		  $tbg.hide().css({backgroundImage : "url("+images[++c%n]+")"}).delay(4000).fadeTo(1200, 1, 
+		  function(){
 				$bg.css({backgroundImage : "url("+images[c%n]+")"}); 
-			
+				
 				if(c == n){
 					c = 0; //prevents overflow
 				}
@@ -142,6 +143,7 @@
 				loopBg();
 		  });
 		}());
+		
 
 		/* ---------------------------------------------- /*
 		 * WOW Animation When You Scroll
