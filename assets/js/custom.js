@@ -105,19 +105,19 @@
 
 		
 		// parallax
-		//if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
-		//	$('#home').css({'background-attachment': 'scroll'});
-		//} else {
+		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+			$('#home').css({'background-attachment': 'scroll'});
+		} else {
 			$('#home').parallax('50%', 0.1);
-		//}
+		}
 
 		//crossfaded landing images
-		/*var images = [
+		var images = [
 		  "assets/images/matt_mic.jpg",
 		  "assets/images/josh_console.jpg",
 		  "assets/images/davis_kit.jpg"
 		];
-		
+
 		var $bg = $("#home"),
 			n = images.length,
 			c = 0; // Loop Counter
@@ -140,8 +140,8 @@
 				}
 				
 				loopBg();
-		  });//
-		}());*/
+		  });
+		}());
 
 		/* ---------------------------------------------- /*
 		 * WOW Animation When You Scroll
