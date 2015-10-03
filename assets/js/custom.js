@@ -113,9 +113,9 @@
 
 		//crossfaded landing images
 		var images = [
-		  "assets/images/matt_mic.jpg",
-		  "assets/images/josh_console.jpg",
-		  "assets/images/davis_kit.jpg"
+		  "assets/images/matt_mic.JPG",
+		  "assets/images/josh_console.JPG",
+		  "assets/images/davis_kit.JPG"
 		];
 		
 		var $bg = $("#home"),
