@@ -95,19 +95,53 @@
 		/* ---------------------------------------------- /*
 		 * Home BG
 		/* ---------------------------------------------- */
-
+		
+		//screen height
 		$(".screen-height").height($(window).height());
 
 		$(window).resize(function(){
 			$(".screen-height").height($(window).height());
 		});
 
-		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
-			$('#home').css({'background-attachment': 'scroll'});
-		} else {
+		
+		// parallax
+		//if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+		//	$('#home').css({'background-attachment': 'scroll'});
+		//} else {
 			$('#home').parallax('50%', 0.1);
+		//}
+
+		//crossfaded landing images
+		var images = [
+		  "assets/images/matt_mic.jpg",
+		  "assets/images/josh_console.jpg",
+		  "assets/images/davis_kit.jpg"
+		];
+		
+		var $bg = $("#home"),
+			n = images.length,
+			c = 0; // Loop Counter
+
+		// Preload Array of images...
+		for(var i=0; i<n; i++){
+		  var tImg = new Image();
+		  tImg.src = images[i];
 		}
 
+		$bg.css({backgroundImage : "url("+images[c]+")"}); 
+
+		(function loopBg(){
+		  $bg.hide().css({backgroundImage : "url("+images[++c%n]+")"}).delay(2000).fadeTo(1200, 1, 
+			function(){
+				$bg.css({backgroundImage : "url("+images[c%n]+")"}); 
+			
+				if(c == n){
+					c = 0; //prevents overflow
+				}
+				
+				loopBg();
+		  });//
+		}());
 
 		/* ---------------------------------------------- /*
 		 * WOW Animation When You Scroll
