@@ -96,21 +96,6 @@
 		 * Home BG
 		/* ---------------------------------------------- */
 
-		//screen height
-		$(".screen-height").height($(window).height());
-
-		$(window).resize(function(){
-			$(".screen-height").height($(window).height());
-		});
-
-		
-		// parallax
-		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
-			$('#home').css({'background-attachment': 'scroll'});
-		} else {
-			$('#home').parallax('50%', 0.1);
-		}
-
 		//crossfaded landing images
 		var images = [
 		  "assets/images/matt_mic.JPG",
@@ -144,7 +129,21 @@
 		  });
 		}());
 		
+		//screen height
+		$(".screen-height").height($(window).height());
 
+		$(window).resize(function(){
+			$(".screen-height").height($(window).height());
+		});
+		
+		// parallax
+		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+			$bg.css({'background-attachment': 'scroll'});
+			$tbg.css({'background-attachment': 'scroll'});
+		} else {
+			$bg.parallax('50%', 0.1);
+			$tbg.parallax('50%', 0.1);
+		}
 		/* ---------------------------------------------- /*
 		 * WOW Animation When You Scroll
 		/* ---------------------------------------------- */
