@@ -139,8 +139,6 @@
 		}());
 		
 		//screen height
-		window.scrollTo(0,1);
-		
 		$(".screen-height").height($(window).height());
 
 		$(window).resize(function(){
@@ -148,13 +146,13 @@
 		});
 		
 		// parallax
-		/*if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
 			$bg.css({'background-attachment': 'scroll'});
 			$tbg.css({'background-attachment': 'scroll'});
-		} else {*/
+		} else {
 			$bg.parallax('50%', 0.1);
 			$tbg.parallax('50%', 0.1);
-		//}
+		}
 		/* ---------------------------------------------- /*
 		 * WOW Animation When You Scroll
 		/* ---------------------------------------------- */
