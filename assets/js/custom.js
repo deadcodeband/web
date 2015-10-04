@@ -139,6 +139,8 @@
 		}());
 		
 		//screen height
+		window.scrollTo(0,1);
+		
 		$(".screen-height").height($(window).height());
 
 		$(window).resize(function(){
