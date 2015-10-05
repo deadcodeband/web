@@ -986,3 +986,9 @@ figure.effect-bubba:hover p {
 	}
 
 }
+
+.fb-page, 
+.fb-page span, 
+.fb-page span iframe[style] { 
+    width: 100% !important; 
+}
