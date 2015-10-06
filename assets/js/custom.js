@@ -151,8 +151,8 @@
 		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
 			$bg.css({'background-attachment': 'scroll'});
 			$tbg.css({'background-attachment': 'scroll'});
-			$fb.css({'width':'300px'});
-			$fb.css({'height':'300px'});
+			$fb.css({'width':'180px'});
+			$fb.css({'height':'70px'});
 		} else {
 			$bg.parallax('50%', 0.1);
 			$tbg.parallax('50%', 0.1);
