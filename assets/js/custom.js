@@ -115,7 +115,7 @@
 		
 		var $bg = $("#home"),
 			$tbg = $(".temp_home"),
-			$fb = $(".fb"),
+			$fb = $(".fb-page"),
 			n = images.length,
 			c = 0; // Loop Counter
 
