@@ -153,7 +153,7 @@
 		} else {
 			$bg.parallax('50%', 0.1);
 			$tbg.parallax('50%', 0.1);
-			$fb.css({'width':'500px'});
+			$fb.css({'width':'180px'});
 		}
 		
 		
