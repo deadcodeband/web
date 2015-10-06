@@ -157,7 +157,7 @@
 			$bg.parallax('50%', 0.1);
 			$tbg.parallax('50%', 0.1);
 			$fb.css({'width':'500px'});
-			$fb.css({'height':'300px'});
+			$fb.css({'height':'500px'});
 		}
 		
 		
