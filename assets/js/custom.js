@@ -151,12 +151,14 @@
 		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
 			$bg.css({'background-attachment': 'scroll'});
 			$tbg.css({'background-attachment': 'scroll'});
+			
 			$fb.css({'width':'325px'});
 			$fb.css({'height':'70px'});
 			$fb.css({'small_header':'true'});
 		} else {
 			$bg.parallax('50%', 0.1);
 			$tbg.parallax('50%', 0.1);
+			
 			$fb.css({'width':'500px'});
 			$fb.css({'height':'500px'});
 			$fb.css({'small_header':'false'});
