@@ -157,7 +157,7 @@
 		/* ---------------------------------------------- */
 
 		wow = new WOW({
-			mobile: true
+			mobile: false
 		});
 		wow.init();
 
@@ -207,10 +207,19 @@
 											response.html(ret.message).fadeIn(500);
 							}
 						});
-				}           
-            	return false;
-			});
-
+			}           
+            return false;
+		});
+			
+		var $fb = $(".fb");
+		
+		// facebook plugin resize
+		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+			$fb.css({'width:360px'});
+		} else {
+			$fb.css({'width:500px'});
+		}
+		
 	});
 
 })(jQuery);

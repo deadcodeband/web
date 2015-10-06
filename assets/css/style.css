@@ -289,7 +289,7 @@ textarea.form-control {
 
 .pfblock-line {
 	background: rgba(135, 135, 135, 0.5);
-	width: 100px;
+	width: 100%;
 	height: 1px;
 	margin: 30px auto;
 }
@@ -984,5 +984,9 @@ figure.effect-bubba:hover p {
 	.cbp-qtrotator img {
 		width: 80px;
 	}
+
+}
+
+.fb{
 
 }
