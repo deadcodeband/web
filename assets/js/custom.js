@@ -113,6 +113,7 @@
 		
 		var $bg = $("#home"),
 			$tbg = $(".temp_home"),
+			$fb = $(".fb"),
 			n = images.length,
 			c = 0; // Loop Counter
 
@@ -144,14 +145,18 @@
 			$(".screen-height").height($(window).height());
 		});
 		
-		// parallax
+		// parallax & facebook page plugin sizing. 
 		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
 			$bg.css({'background-attachment': 'scroll'});
 			$tbg.css({'background-attachment': 'scroll'});
+			$fb.css({'width':'360px'});
 		} else {
 			$bg.parallax('50%', 0.1);
 			$tbg.parallax('50%', 0.1);
+			$fb.css({'width':'500px'});
 		}
+		
+		
 		/* ---------------------------------------------- /*
 		 * WOW Animation When You Scroll
 		/* ---------------------------------------------- */
@@ -211,14 +216,7 @@
             return false;
 		});
 			
-		var $fb = $(".fb");
 		
-		// facebook plugin resize
-		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
-			$fb.css({'width:360px'});
-		} else {
-			$fb.css({'width:500px'});
-		}
 		
 	});
 
