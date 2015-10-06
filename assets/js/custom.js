@@ -115,7 +115,7 @@
 		
 		var $bg = $("#home"),
 			$tbg = $(".temp_home"),
-			$fb = $(".fb-page"),
+			$fb = $(".fb"),
 			n = images.length,
 			c = 0; // Loop Counter
 
@@ -157,14 +157,12 @@
 			
 			$fb.css({'width':'325px'});
 			$fb.css({'height':'70px'});
-			$fb.css({'data-small-header':'true'});
 		} else {
 			$bg.parallax('50%', 0.1);
 			$tbg.parallax('50%', 0.1);
 			
 			$fb.css({'width':'500px'});
 			$fb.css({'height':'500px'});
-			$fb.css({'data-small-header':'false'});
 		}
 		
 		
