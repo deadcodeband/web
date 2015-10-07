@@ -509,10 +509,10 @@ textarea.form-control {
 }
 
 .social-links a {
-	width: 36px;
-	height: 36px;
+	width: 41px;
+	height: 30px;
 	display: block;
-	line-height: 35px;
+	line-height: 29px;
 	text-align: center;
 	border: 1px solid rgba(255, 255, 255, .1);
 	-webkit-border-radius: 3px;
@@ -525,6 +525,38 @@ textarea.form-control {
 .social-links a:hover {
 	border: 1px solid rgba(255, 255, 255, .5);
 	color: rgba(255, 255, 255, .8);
+}
+
+
+.social-links-alt {
+	list-style: none;
+	padding: 0;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.social-links-alt li {
+	display: inline-block;
+	margin: 5px;
+}
+
+.social-links-alt a {
+	width: 41px;
+	height: 30px;
+	display: block;
+	line-height: 29px;
+	text-align: center;
+	border: 1px solid rgba(0, 0, 0, .1);
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+			border-radius: 3px;
+	font-size: 14px;
+	color: rgba(0, 0, 0, .2);
+}
+
+.social-links-alt a:hover {
+	border: 1px solid rgba(0, 0, 0, .5);
+	color: rgba(0, 0, 0, .8);
 }
 
 /* ---------------------------------------------- /*
