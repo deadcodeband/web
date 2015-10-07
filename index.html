@@ -18,6 +18,9 @@
 		<!-- Custom .js -->
 		<script src="assets/js/modernizr.custom.js"></script>	
 
+		<!-- soundcloud footer -->
+		<script type="text/javascript" src="https://stratus.soundcloud.com/stratus.js"></script>
+
 		<!-- tab -->
 		<title>deadcode - nw alt-metal band</title>
 		<link rel="icon" href="assets/images/favicon.png">
@@ -594,6 +597,15 @@
 		  -- SCRIPTS
 		  -->
 		
+		<script type="text/javascript">
+		  $(document).ready(function(){
+			$.stratus({
+			  key: "10229c2b6475be9007e132fc894e4752",
+			  links: "https://soundcloud.com/deadcodeband/sets/deadcode"
+			});
+		  });
+		</script>
+
 		<!-- close navbar dropdown after selection -->
 		<script>
 		$('.nav a').on('click', function(){ 
