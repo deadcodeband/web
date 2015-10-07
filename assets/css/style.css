@@ -509,10 +509,10 @@ textarea.form-control {
 }
 
 .social-links a {
-	width: 41px;
-	height: 30px;
+	width: 36px;
+	height: 36px;
 	display: block;
-	line-height: 29px;
+	line-height: 35px;
 	text-align: center;
 	border: 1px solid rgba(255, 255, 255, .1);
 	-webkit-border-radius: 3px;
