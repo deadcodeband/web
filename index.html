@@ -12,6 +12,19 @@
 		<link href="assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
 		<link href="assets/css/animate.css" rel="stylesheet">
 		
+		<!-- Javascript files -->
+		<script src="assets/js/jquery-1.11.1.min.js"></script>
+		<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/js/jquery.parallax-1.1.3.js"></script>
+		<script src="assets/js/imagesloaded.pkgd.js"></script>
+		<script src="assets/js/jquery.sticky.js"></script>
+		<script src="assets/js/smoothscroll.js"></script>
+		<script src="assets/js/wow.min.js"></script>
+		<script src="assets/js/jquery.easypiechart.js"></script>
+		<script src="assets/js/waypoints.min.js"></script>
+		<script src="assets/js/jquery.cbpQTRotator.js"></script>
+		<script src="assets/js/custom.js"></script>
+		
 		<!-- Custom styles CSS -->
 		<link href="assets/css/style.css" rel="stylesheet" media="screen">
 		
@@ -579,32 +592,29 @@
 		</div>
 		<!-- Scroll to top end-->
 
-		<!-- Javascript files -->
-		<script src="assets/js/jquery-1.11.1.min.js"></script>
-		<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-		<script src="assets/js/jquery.parallax-1.1.3.js"></script>
-		<script src="assets/js/imagesloaded.pkgd.js"></script>
-		<script src="assets/js/jquery.sticky.js"></script>
-		<script src="assets/js/smoothscroll.js"></script>
-		<script src="assets/js/wow.min.js"></script>
-		<script src="assets/js/jquery.easypiechart.js"></script>
-		<script src="assets/js/waypoints.min.js"></script>
-		<script src="assets/js/jquery.cbpQTRotator.js"></script>
-		<script src="assets/js/custom.js"></script>
+		
 		
 		
 		<!--
 		  -- SCRIPTS
 		  -->
 		
-		<script type="text/javascript">
-		  $(document).ready(function(){
-			$.stratus({
-			  key: "10229c2b6475be9007e132fc894e4752",
-			  links: "https://soundcloud.com/deadcodeband/sets/deadcode"
-			});
-		  });
-		</script>
+		<script type='text/javascript'>//<![CDATA[ 
+$(window).load(function(){
+$(document).ready(function(){
+$('body').stratus({
+  auto_play: true,
+  download: false,
+  links: 'https://soundcloud.com/deadcodeband/sets/deadcode',
+  random: true,
+  buying: true,
+  user: false,
+ stats: false,
+});
+});
+});//]]>  
+
+</script>
 
 		<!-- close navbar dropdown after selection -->
 		<script>
