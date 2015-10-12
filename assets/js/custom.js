@@ -97,7 +97,7 @@
 
 		//crossfaded landing images
 		var images = [
-		  /*"assets/images/cover/1.jpg",
+		  "assets/images/cover/1.jpg",
 		  "assets/images/cover/2.jpg",
 		  "assets/images/cover/3.jpg",
 		  "assets/images/cover/4.jpg",
@@ -108,9 +108,7 @@
 		  "assets/images/cover/9.jpg",
 		  "assets/images/cover/10.jpg",
 		  "assets/images/cover/11.jpg",
-		  "assets/images/cover/12.jpg"*/
-		  "assets/images/cover/test1.jpg",
-		  "assets/images/cover/test2.jpg"
+		  "assets/images/cover/12.jpg"
 		];
 		
 		var $bg = $("#home"),
