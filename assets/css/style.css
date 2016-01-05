@@ -35,7 +35,7 @@ a:hover {
 }
 
 /* ---------------------------------------------- /*
- * Transition elsements
+ * Transition elements
 /* ---------------------------------------------- */
 
 
@@ -236,7 +236,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 .pfblock {
-	padding: 120px 0 100px;
+	padding: 48px 0 24px;
 }
 
 .pfblock-gray {
@@ -288,6 +288,27 @@ textarea.form-control {
 }
 
 .pfblock-line {
+	background: rgba(135, 135, 135, 0.5);
+	width: 100%;
+	height: 1px;
+	margin: 30px auto;
+}
+
+.pfblock-line-bio{
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 0;
+	text-align: center;
+	-webkit-transform: translate(0%, -50%);
+	   -moz-transform: translate(0%, -50%);
+		-ms-transform: translate(0%, -50%);
+		 -o-transform: translate(0%, -50%);
+			transform: translate(0%, -50%);
+	padding: 0 15px;	
+}
+
+.pfblock-line-bio-para {
 	background: rgba(135, 135, 135, 0.5);
 	width: 100%;
 	height: 1px;
@@ -403,10 +424,22 @@ textarea.form-control {
     font-weight: 800;
 }
 
-.start {
+.start-header {
 	font-family: Raleway, "Times New Roman", Times, sans-serif;
-	font-size: 16px;
+	font-size: 148px;
 	font-style: normal;
+	text-transform: uppercase;
+	letter-spacing: 40px;
+	font-weight: 500;
+	margin: 15px 0;
+}
+
+.start-pitch {
+	font-family: Raleway, "Times New Roman", Times, sans-serif;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 500;
+	color: red;
 	text-transform: none;
 	margin: 15px 0;
 }
