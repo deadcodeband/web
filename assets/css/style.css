@@ -426,10 +426,10 @@ textarea.form-control {
 
 .start-header {
 	font-family: Raleway, "Times New Roman", Times, sans-serif;
-	font-size: 60px;
+	font-size: 50px;
 	font-style: normal;
 	text-transform: uppercase;
-	letter-spacing: 10px;
+	letter-spacing: 4px;
 	font-weight: 400;
 	margin: 15px 0;
 }
