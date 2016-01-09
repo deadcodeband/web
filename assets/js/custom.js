@@ -96,7 +96,7 @@
 		/* ---------------------------------------------- */
 
 		//crossfaded landing images
-		var images = [
+		/*var images = [
 		  "assets/images/cover/1.jpg",
 		  "assets/images/cover/2.jpg",
 		  "assets/images/cover/3.jpg",
@@ -136,7 +136,18 @@
 				
 				loopBg();
 		  });
-		}());
+		}());*/
+		
+		
+		//video landing
+		var $bg = $("#home"),
+			$tbg = $(".temp_home"),
+			$bgv = $("#bgvid"),
+			$vcon = $("#video_container"),
+			$fb = $(".fb-page");
+			
+		$bg.css({backgroundImage : "url(assets/videos/test.mp4)"});
+			
 		
 		//screen height
 		$(".screen-height").height($(window).height());
@@ -154,6 +165,8 @@
 		} else {
 			$bg.parallax('50%', 0.1);
 			$tbg.parallax('50%', 0.1);
+			$bgv.parallax('50%', 0.1);
+			$vcon.parallax('50%', 0.1);
 			$fb.css({'width':'500px'});
 			$fb.css({'height':'500px'});
 		}
