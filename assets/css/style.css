@@ -660,6 +660,22 @@ textarea.form-control {
 	background: #222;
 }
 
+
+
+.footer {
+	border-top: 1px solid #f5f5f5;
+	background: #ffffff;
+	height: 42px;
+	bottom: 0;
+}
+
+.navbar-custom-footer {
+	border: 0;
+	border-radius: 0;
+	height: 42px;
+	margin: 0;
+}
+
 /* ---------------------------------------------- /*
  * Scroll to top
 /* ---------------------------------------------- */
@@ -696,7 +712,7 @@ textarea.form-control {
 .scroll-down {
 	position: absolute;
 	left: 50%;
-	bottom: 40px;
+	bottom: 55px;
 	border: 2px solid #fff;
 	border-radius: 50%;
 	height: 50px;
@@ -788,6 +804,24 @@ textarea.form-control {
 	}
 
 }
+
+@media (min-width: 768px) {
+.bandcamp1 {
+	border: 0; 
+	width: 100%; 
+	height: 42px; 
+	padding-left: 20%;
+}
+	
+@media (max-width: 767px) {
+	.bandcamp2 {
+		border: 0; 
+		width: 100%; 
+		height: 42px; 
+		padding-left: 0;
+	}
+}
+
 
 
 /*--------------------------------*/

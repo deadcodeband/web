@@ -1,19 +1,13 @@
-(function($){
-
-	/* ---------------------------------------------- /*
-	 * Preloader
-	/* ---------------------------------------------- */
-
+(function($)
+{	
+	//Preloader
 	$(window).load(function() {
 		$('#status').fadeOut();
 		$('#preloader').delay(300).fadeOut('slow');
 	});
 
 	$(document).ready(function() {
-		/* ---------------------------------------------- /*
-		 * Smooth scroll / Scroll To Top
-		/* ---------------------------------------------- */
-
+		//Smooth scroll / Scroll To Top
 		$('a[href*=#]').bind("click", function(e){
            
 			var anchor = $(this);
@@ -31,10 +25,7 @@
 			}
 		});
 
-		/* ---------------------------------------------- /*
-		 * Navbar
-		/* ---------------------------------------------- */
-
+		//Navbar
 		$('.header').sticky({
 			topSpacing: 0
 		});
@@ -42,12 +33,9 @@
 		$('body').scrollspy({
 			target: '.navbar-custom',
 			offset: 70
-		})
-
-        
-        /* ---------------------------------------------- /*
-		 * Skills
-        /* ---------------------------------------------- */    
+		});
+				
+		//Skills 
         //var color = $('#home').css('backgroundColor');
 
         $('.skills').waypoint(function(){
@@ -64,11 +52,7 @@
             });
         },{offset:'80%'});
         
-        
-        /* ---------------------------------------------- /*
-		 * Quote Rotator
-		/* ---------------------------------------------- */
-       
+		//Quote Rotator    
 			$( function() {
 				/*
 				- how to call the plugin:
@@ -89,65 +73,55 @@
 				$( '#cbp-qtrotator' ).cbpQTRotator();
 
 			} );
-		
-        
-		/* ---------------------------------------------- /*
-		 * Home BG
-		/* ---------------------------------------------- */
 
-		//crossfaded landing images
-		/*var images = [
-		  "assets/images/cover/1.jpg",
-		  "assets/images/cover/2.jpg",
-		  "assets/images/cover/3.jpg",
-		  "assets/images/cover/4.jpg",
-		  "assets/images/cover/5.jpg",
-		  "assets/images/cover/6.jpg",
-		  "assets/images/cover/7.jpg",
-		  "assets/images/cover/8.jpg",
-		  "assets/images/cover/9.jpg",
-		  "assets/images/cover/10.jpg",
-		  "assets/images/cover/11.jpg",
-		  "assets/images/cover/12.jpg"
-		];
-		
-		var $bg = $("#home"),
-			$tbg = $(".temp_home"),
-			$fb = $(".fb-page"),
-			n = images.length,
-			c = 0; // Loop Counter
-
-		// Preload Array of images...
-		for(var i=0; i<n; i++){
-		  var tImg = new Image();
-		  tImg.src = images[i];
-		}
-
-		$bg.css({backgroundImage : "url("+images[c]+")"}); 
-
-		(function loopBg(){
-		  $tbg.hide().css({backgroundImage : "url("+images[++c%n]+")"}).delay(4000).fadeTo(1200, 1, 
-		  function(){
-				$bg.css({backgroundImage : "url("+images[c%n]+")"}); 
-				
-				if(c == n){
-					c = 0; //prevents overflow
-				}
-				
-				loopBg();
-		  });
-		}());*/
-		
-		
-		//video landing
-		var $bg = $("#home"),
-			$tbg = $(".temp_home"),
-			$bgv = $("#bgvid"),
-			$vcon = $("#video_container"),
-			$fb = $(".fb-page");
+		//landing BG
+		//if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {	
+			//landing crossfaded images
+			var images = [
+			  "assets/images/cover/1.jpg",
+			  "assets/images/cover/2.jpg",
+			  "assets/images/cover/3.jpg",
+			  "assets/images/cover/4.jpg",
+			  "assets/images/cover/5.jpg",
+			  "assets/images/cover/6.jpg",
+			  "assets/images/cover/7.jpg",
+			  "assets/images/cover/8.jpg",
+			  "assets/images/cover/9.jpg",
+			  "assets/images/cover/10.jpg",
+			  "assets/images/cover/11.jpg",
+			  "assets/images/cover/12.jpg"
+			];
 			
-		$bg.css({backgroundImage : "url(assets/videos/test.mp4)"});
-			
+			var $bg = $("#home"),
+				$tbg = $(".temp_home"),
+				$fb = $(".fb-page"),
+				n = images.length,
+				c = 0; // Loop Counter
+
+			// Preload Array of images...
+			for(var i=0; i<n; i++){
+			  var tImg = new Image();
+			  tImg.src = images[i];
+			}
+
+			$bg.css({backgroundImage : "url("+images[c]+")"}); 
+
+			(function loopBg(){
+			  $tbg.hide().css({backgroundImage : "url("+images[++c%n]+")"}).delay(4000).fadeTo(1200, 1, 
+			  function(){
+					$bg.css({backgroundImage : "url("+images[c%n]+")"}); 
+					
+					if(c == n){
+						c = 0; //prevents overflow
+					}
+					
+					loopBg();
+			  });
+			}());
+		//}
+		//else{
+			//landing background video
+		//}
 		
 		//screen height
 		$(".screen-height").height($(window).height());
@@ -165,36 +139,23 @@
 		} else {
 			$bg.parallax('50%', 0.1);
 			$tbg.parallax('50%', 0.1);
-			$bgv.parallax('50%', 0.1);
-			$vcon.parallax('50%', 0.1);
 			$fb.css({'width':'500px'});
 			$fb.css({'height':'500px'});
 		}
 		
-		
-		/* ---------------------------------------------- /*
-		 * WOW Animation When You Scroll
-		/* ---------------------------------------------- */
-
+		//WOW Animation When You Scroll
 		wow = new WOW({
 			mobile: false
 		});
 		wow.init();
 
-
-		/* ---------------------------------------------- /*
-		 * E-mail validation
-		/* ---------------------------------------------- */
-
+		//E-mail validation
 		function isValidEmailAddress(emailAddress) {
 			var pattern = new RegExp(/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i);
 			return pattern.test(emailAddress);
 		};
 
-		/* ---------------------------------------------- /*
-		 * Contact form ajax
-		/* ---------------------------------------------- */
-
+		//Contact form ajax
 		$('#contact-form').submit(function(e) {
 
 			e.preventDefault();
@@ -217,10 +178,10 @@
 
 			else {
 					 $.ajax({
-							type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
-							url         : 'assets/php/contact.php', // the url where we want to POST
-							data        : formData, // our data object
-							dataType    : 'json', // what type of data do we expect back from the server
+							type        : 'POST', 						// define the type of HTTP verb we want to use (POST for our form)
+							url         : 'assets/php/contact.php', 	// the url where we want to POST
+							data        : formData, 					// our data object
+							dataType    : 'json', 						// what type of data do we expect back from the server
 							encode      : true,
 							success		: function(res){
 											var ret = $.parseJSON(JSON.stringify(res));
@@ -229,10 +190,7 @@
 						});
 			}           
             return false;
-		});
-			
-		
-		
+		});		
 	});
 
 })(jQuery);
