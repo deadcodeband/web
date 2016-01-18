@@ -691,8 +691,8 @@ textarea.form-control {
 	position: fixed;
 	display: none;
 	z-index: 999;
-	bottom: 2em;
-	right: 2em;
+	bottom: 3em;
+	right: .5em;
 }
 
 .scroll-up a {
