@@ -45,16 +45,18 @@
 		  -- SCRIPTS
 		  -->
 		  
-		<!-- script for facebook like and share buttons 
+		<!-- script for facebook like and share buttons -->
 		<script>
 		  window.fbAsyncInit = function() {
 			FB.init({
 			  appId      : '1500355830288223',
+			  status     : true,
 			  xfbml      : true,
 			  version    : 'v2.4'
 			});
 		  };
-
+		  </script>
+<!--
 		  (function(d, s, id){
 			 var js, fjs = d.getElementsByTagName(s)[0];
 			 if (d.getElementById(id)) {return;}
@@ -62,7 +64,7 @@
 			 js.src = "//connect.facebook.net/en_US/sdk.js";
 			 fjs.parentNode.insertBefore(js, fjs);
 		   }(document, 'script', 'facebook-jssdk'));
-		</script>
+		
 		
 		
 		<!-- Preloader --
@@ -402,6 +404,7 @@
 		<script>
 		$('.nav a').on('click', function(){ 
 			if($('.navbar-toggle').css('display') !='none'){
+				$(".navbar-toggle").trigger( "click" );
 				$(".navbar-toggle").trigger( "click" );
 			}
 		});
