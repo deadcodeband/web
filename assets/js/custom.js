@@ -34,7 +34,7 @@
 			target: '.navbar-custom',
 			offset: 70
 		});
-				
+
 		//Skills 
         //var color = $('#home').css('backgroundColor');
 
@@ -79,7 +79,7 @@
 			//landing crossfaded images
 			var images = [
 			  "assets/images/cover/1.jpg",
-			  "assets/images/cover/14.gif",
+			  "assets/images/cover/13.jpg",
 			  "assets/images/cover/15.gif"
 			 /* "assets/images/cover/2.jpg",
 			  "assets/images/cover/3.jpg",
@@ -96,7 +96,6 @@
 			
 			var $bg = $("#home"),
 				$tbg = $(".temp_home"),
-				$fb = $(".fb-page"),
 				n = images.length,
 				c = 0; // Loop Counter
 
@@ -132,17 +131,14 @@
 			$(".screen-height").height($(window).height());
 		});
 		
-		// parallax & facebook page plugin sizing. 
+		// parallax
 		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
 			$bg.css({'background-attachment': 'scroll'});
 			$tbg.css({'background-attachment': 'scroll'});
-			$fb.css({'width':'325px'});
-			$fb.css({'height':'70px'});
+
 		} else {
 			$bg.parallax('50%', 0.1);
 			$tbg.parallax('50%', 0.1);
-			$fb.css({'width':'500px'});
-			$fb.css({'height':'500px'});
 		}
 		
 		//WOW Animation When You Scroll
