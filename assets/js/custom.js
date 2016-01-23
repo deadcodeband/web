@@ -79,7 +79,6 @@
 			//landing crossfaded images
 			var images = [
 			  "assets/images/cover/1.jpg",
-			  "assets/images/cover/13.jpg",
 			  "assets/images/cover/15.gif"
 			 /* "assets/images/cover/2.jpg",
 			  "assets/images/cover/3.jpg",
