@@ -707,7 +707,7 @@ textarea.form-control {
 .footer {
 	border-top: 1px solid #f5f5f5;
 	background: #ffffff;
-	height: 42px;
+	height: 80px;
 	bottom: 0;
 	opacity: 0.75;
 }
@@ -715,7 +715,7 @@ textarea.form-control {
 .navbar-custom-footer {
 	border: 0;
 	border-radius: 0;
-	height: 42px;
+	height: 80px;
 	margin: 0;
 }
 
