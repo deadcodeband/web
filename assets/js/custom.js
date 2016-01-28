@@ -136,7 +136,7 @@
 		var $pf3 = $(".pfimage3");
 		$pf1.css({backgroundImage : "url(assets/images/backtest1.jpg)"});
 		$pf2.css({backgroundImage : "url(assets/images/backtest2.jpg)"});
-		$pf3.css({backgroundImage : "url(assets/images/backtest2.jpg)"});
+		$pf3.css({backgroundImage : "url(assets/images/backtest3.jpg)"});
 		
 		// parallax
 		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
