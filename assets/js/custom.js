@@ -131,14 +131,22 @@
 			$(".screen-height").height($(window).height());
 		});
 		
+		var $pf1 = $(".pfimage1");
+		var $pf2 = $(".pfimage2");
+		$pf1.css({backgroundImage : "url(assets/images/backtest1.jpg)"});
+		$pf2.css({backgroundImage : "url(assets/images/backtest2.jpg)"});
+		
 		// parallax
 		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
 			$bg.css({'background-attachment': 'scroll'});
 			$tbg.css({'background-attachment': 'scroll'});
-
+			$pf1.css({'background-attachment': 'scroll'});
+			$pf2.css({'background-attachment': 'scroll'});
 		} else {
 			$bg.parallax('50%', 0.1);
 			$tbg.parallax('50%', 0.1);
+			$pf1.parallax('50%', 0.1);
+			$pf2.parallax('50%', 0.1);
 		}
 		
 		//WOW Animation When You Scroll

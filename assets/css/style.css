@@ -241,6 +241,26 @@ textarea.form-control {
 	border-bottom: 1px dotted #FFFFFF;
 }
 
+.pfimage1{
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+		 -o-background-size: cover;
+			background-size: cover;
+}
+
+.pfimage2{
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+		 -o-background-size: cover;
+			background-size: cover;
+}
+
 .pfblock-gray {
 	background: #f5f5f5;
 }
@@ -333,6 +353,7 @@ textarea.form-control {
 .pfblock-icon {
 	font-size: 32px;
 }
+
 .calltoaction *{
     text-align: center;
 }
