@@ -133,8 +133,10 @@
 		
 		var $pf1 = $(".pfimage1");
 		var $pf2 = $(".pfimage2");
+		var $pf3 = $(".pfimage3");
 		$pf1.css({backgroundImage : "url(assets/images/backtest1.jpg)"});
 		$pf2.css({backgroundImage : "url(assets/images/backtest2.jpg)"});
+		$pf3.css({backgroundImage : "url(assets/images/backtest2.jpg)"});
 		
 		// parallax
 		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
@@ -142,11 +144,13 @@
 			$tbg.css({'background-attachment': 'scroll'});
 			$pf1.css({'background-attachment': 'scroll'});
 			$pf2.css({'background-attachment': 'scroll'});
+			$pf3.css({'background-attachment': 'scroll'});
 		} else {
 			$bg.parallax('50%', 0.1);
 			$tbg.parallax('50%', 0.1);
 			$pf1.parallax('50%', 0.1);
 			$pf2.parallax('50%', 0.1);
+			$pf3.parallax('50%', 0.1);
 		}
 		
 		//WOW Animation When You Scroll

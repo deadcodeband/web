@@ -261,6 +261,16 @@ textarea.form-control {
 			background-size: cover;
 }
 
+.pfimage3{
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+		 -o-background-size: cover;
+			background-size: cover;
+}
+
 .pfblock-gray {
 	background: #f5f5f5;
 }
@@ -275,10 +285,6 @@ textarea.form-control {
 
 .pfblock-orange {
 	background: #FF9900;
-}
-
-.pfblock-image {
-	padding: 0;
 }
 
 .calltoaction h1,
@@ -1161,3 +1167,40 @@ height: 100%;
 	transition: 1s opacity;
    }
    .stopfade { opacity: .5; }
+   
+
+.containerMusic{
+	padding-right:15px;
+	padding-left:15px;
+	margin-right:auto;
+	margin-left:auto
+}
+
+@media (min-width:768px){
+	.containerMusic{width:750px}
+}
+
+@media (min-width:768px){
+	.containerBandCamp{padding-left:9px}
+}
+
+@media (min-width:992px){
+	.containerMusic{width:750px}
+}
+
+@media (min-width:1200px){
+	.containerMusic{width:750px}
+}
+
+.brighten {
+ -webkit-filter: opacity(55%);
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+ 
+.brighten:hover {
+  -webkit-filter: opacity(100%);
+}
