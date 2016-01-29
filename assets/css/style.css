@@ -702,14 +702,24 @@ textarea.form-control {
 	background: #222;
 }
 
+.navbar-nav > li > a, .navbar-brand {
+    padding-top:8px !important; 
+    padding-bottom:0 !important;
+    height: 30px;
+}
+.navbar {min-height:36px !important;}
 
+.navbar-toggle {
+    padding-top:2px;  
+    padding-bottom:0px;
+}
 
 .footer {
 	border-top: 1px solid #f5f5f5;
 	background: #ffffff;
-	height: 36px;
+	height: 30px;
 	bottom: 0;
-	opacity: 0.75;
+	opacity: 0.9;
 	overflow: hidden;
 }
 
@@ -719,6 +729,22 @@ textarea.form-control {
 	height: 38px;
 	margin: 0;
 	margin-top: -40px;	
+}
+
+@media (min-width:500px){
+	.navbar-custom-footer{padding-left: 0px}
+}
+
+@media (min-width:768px){
+	.navbar-custom-footer{padding-left: 20px}
+}
+
+@media (min-width:900px){
+	.navbar-custom-footer{padding-left: 30px}
+}
+
+@media (min-width:1200px){
+	.navbar-custom-footer{padding-left: 35px}
 }
 
 /* ---------------------------------------------- /*
