@@ -703,7 +703,7 @@ textarea.form-control {
 }
 
 .navbar-nav > li > a, .navbar-brand {
-    padding-top:8px !important; 
+    padding-top:9px !important; 
     padding-bottom:0 !important;
     height: 30px;
 }
