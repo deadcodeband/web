@@ -1,7 +1,5 @@
 (function($)
 {	
-	window.scrollTo(0,1);
-	
 	//Preloader
 	$(window).load(function() {
 		$('#status').fadeOut();
