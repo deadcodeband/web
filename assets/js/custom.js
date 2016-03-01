@@ -78,6 +78,7 @@
 		//if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {	
 			//landing crossfaded images
 			var images = [
+			  "assets/images/cover/0.jpg",
 			  "assets/images/cover/1.jpg",
 			  "assets/images/cover/2.jpg",
 			  "assets/images/cover/3.jpg",
@@ -87,9 +88,7 @@
 			  "assets/images/cover/7.jpg",
 			  "assets/images/cover/8.jpg",
 			  "assets/images/cover/9.jpg",
-			  "assets/images/cover/10.jpg",
-			  "assets/images/cover/11.jpg",
-			  "assets/images/cover/12.jpg"
+			  "assets/images/cover/10.jpg"
 			];
 			
 			var $bg = $("#home"),
