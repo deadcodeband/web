@@ -78,7 +78,6 @@
 		//if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {	
 			//landing crossfaded images
 			var images = [
-			  "assets/images/cover/0.jpg",
 			  "assets/images/cover/1.jpg",
 			  "assets/images/cover/2.jpg",
 			  "assets/images/cover/3.jpg",
