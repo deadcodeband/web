@@ -31,6 +31,9 @@
 		<script src="assets/js/jquery.cbpQTRotator.js"></script>
 		<script src="assets/js/custom.js"></script>
 		
+		<!-- php files -->
+		<script src="assets/php/contact.php"></script>
+		
 		<!-- Custom .js -->
 		<script src="assets/js/modernizr.custom.js"></script>	
 
@@ -261,40 +264,61 @@
 		</section>
 		<!-- press end -->
 
-		<!-- connect start --
+		<!-- connect start -->
 		<section id="connect" class="pfblock pfblock-orange">
 			<div class="container">
 			
 				<div class="pfblock-header wow fadeInUp">
-					<h2 class="pfblock-title">free track</h2>
+					<!--<h2 class="pfblock-title">Get deadcode's debut album free</h2>-->
+					<h2 class="pfblock-title">test</h2>
 					<div class="pfblock-line"></div>
 				</div>
 				
 				<div class="pfblock-subtitle" style="text-align: center;">
-					Fill out the form below to receive a free track. We don't give a shit about your privacy.
+					<!--Fill out the form below to receive a free digital download of Deadcode's self-titled debut album. -->
+					test
 				</div>
 				
 				<br>
 
 				<div class="row">
 					<div class="col-sm-6 col-sm-offset-3">
-						<form id="connect-form" role="form">
+						<form id="connect-form" role="form" action="contact.php" method="post">
 							<div class="ajax-hidden">
 								<div class="form-group wow fadeInUp">
 									<label class="sr-only" for="c_name">Name</label>
 									<input type="text" id="c_name" class="form-control" name="c_name" placeholder="Name">
 								</div>
 
+								<div class="form-group wow fadeInUp">
+									<label class="sr-only" for="c_name">Country</label>
+									<input type="text" id="c_name" class="form-control" name="c_country" placeholder="Country">
+								</div>
+								
+								<div class="form-group wow fadeInUp">
+									<label class="sr-only" for="c_name">State</label>
+									<input type="text" id="c_name" class="form-control" name="c_state" placeholder="State">
+								</div>
+								
+								<div class="form-group wow fadeInUp">
+									<label class="sr-only" for="c_name">City</label>
+									<input type="text" id="c_name" class="form-control" name="c_city" placeholder="City">
+								</div>
+								
 								<div class="form-group wow fadeInUp" data-wow-delay=".1s">
 									<label class="sr-only" for="c_email">Email</label>
 									<input type="email" id="c_email" class="form-control" name="c_email" placeholder="E-mail">
 								</div>
 
-								<button type="submit" class="btn btn-lg btn-block wow fadeInUp" data-wow-delay=".3s">Get Song</button>
+								<!--<button type="submit" class="btn btn-lg btn-block wow fadeInUp" data-wow-delay=".3s">Get Album</button>-->
+								<button type="submit" class="btn btn-lg btn-block wow fadeInUp" data-wow-delay=".3s">test</button>
+								<button type="reset" class="btn btn-lg btn-block wow fadeInUp" data-wow-delay=".3s">Reset</button>
 							</div>
 							<div class="ajax-response"></div>
 						</form>
-
+					<div class="pfblock-subtitle" style="text-align: center;">
+					test.
+					</div>
 					</div>
 
 				</div>
