@@ -3,9 +3,6 @@
 if(isset($_POST['message'])){
 
 	$name = $_POST['name'];
-	$country = $_POST['country'];
-	$state = $_POST['state'];
-	$city = $_POST['city'];
 	$email = $_POST['email'];
 	$message = $_POST['message'];
     
