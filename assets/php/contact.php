@@ -1,6 +1,6 @@
 <?php
 
-/*if(isset($_POST['message'])){
+if(isset($_POST['message'])){
 
 	$name = $_POST['name'];
 	$country = $_POST['country'];
@@ -31,8 +31,6 @@
 	
 	
 	echo json_encode($res);
-}*/
-
-echo test
+}
 
 ?>
