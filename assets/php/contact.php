@@ -1,10 +1,10 @@
 <?php
 
-if(isset($_POST['message'])){
+if(isset($_GET['message'])){
 
-	$name = $_POST['name'];
-	$email = $_POST['email'];
-	$message = $_POST['message'];
+	$name = $_GET['name'];
+	$email = $_GET['email'];
+	$message = $_GET['message'];
     
 	
 	$to      = 'erichappe@gmail.com';
