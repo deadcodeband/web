@@ -264,7 +264,7 @@
 		</section>
 		<!-- press end -->
 
-		<!-- connect start --
+		<!-- connect start -->
 		<section id="connect" class="pfblock pfblock-orange">
 			<div class="container">
 			
@@ -281,21 +281,26 @@
 
 				<div class="row">
 					<div class="col-sm-6 col-sm-offset-3">
-						<form id="connect-form" action="assets/php/contact.php" method="get">
+						<form id="connect-form" action="mailto:contact@deadcodeband.com?subject=Free Deadcode Album" method="post" enctype="text/plain">
 							<div class="ajax-hidden">
 								<div class="form-group wow fadeInUp">
-									<label class="sr-only" for="c_name">Name</label>
-									<input type="text" id="c_name" class="form-control" name="c_name" placeholder="Name">
+									<label class="sr-only" for="firstname">First Name</label>
+									<input type="text" id="firstname" class="form-control" name="firstname" placeholder="First Name">
+								</div>
+								
+								<div class="form-group wow fadeInUp">
+									<label class="sr-only" for="lastname">Last Name</label>
+									<input type="text" id="lastname" class="form-control" name="lastname" placeholder="Last Name">
+								</div>
+								
+								<div class="form-group wow fadeInUp">
+									<label class="sr-only" for="citystate">City, State</label>
+									<input type="text" id="citystate" class="form-control" name="citystate" placeholder="City, State">
 								</div>
 								
 								<div class="form-group wow fadeInUp" data-wow-delay=".1s">
-									<label class="sr-only" for="c_email">Email</label>
-									<input type="email" id="c_email" class="form-control" name="c_email" placeholder="E-mail">
-								</div>
-
-								<div class="form-group wow fadeInUp" data-wow-delay=".1s">
-									<label class="sr-only" for="c_message">Message</label>
-									<input type="text" id="c_message" class="form-control" name="c_message" placeholder="Message">
+									<label class="sr-only" for="email">Email</label>
+									<input type="email" id="email" class="form-control" name="email" placeholder="E-mail">
 								</div>
 								
 								<button type="submit" class="btn btn-lg btn-block wow fadeInUp" data-wow-delay=".3s">Get Album</button>
