@@ -78,7 +78,7 @@
 		//if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {	
 			//landing crossfaded images
 			var images = [
-			  "https://giant.gfycat.com/IcyLimpingGorilla.gif"
+			  "https://thumbs.gfycat.com/IcyLimpingGorilla-size_restricted.gif"
 			  /*"assets/images/cover/2.jpg",
 			  "assets/images/cover/3.jpg",
 			  "assets/images/cover/4.jpg",
