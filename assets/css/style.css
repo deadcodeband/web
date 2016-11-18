@@ -1241,3 +1241,31 @@ height: 100%;
   margin-top:10%;
   width:10%;
 }
+
+body.modal-carousel {
+    overflow: hidden;
+}
+body.modal-body {
+    overflow: hidden;
+}
+body.modal-title {
+    overflow: hidden;
+}
+body.modal-header {
+    overflow: hidden;
+}
+body.modal-content {
+    overflow: hidden;
+}
+body.modal-dialog {
+    overflow: hidden;
+}
+body.modal-gallery {
+    overflow: hidden;
+}
+body.modal-open {
+    overflow: hidden;
+}
+body.carousel-inner {
+    overflow: hidden;
+}
