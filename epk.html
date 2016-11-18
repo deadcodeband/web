@@ -31,14 +31,8 @@
 		<script src="assets/js/jquery.cbpQTRotator.js"></script>
 		<script src="assets/js/custom.js"></script>
 		
-		<!-- php files -->
-		<script src="assets/php/contact.php"></script>
-		
 		<!-- Custom .js -->
 		<script src="assets/js/modernizr.custom.js"></script>	
-
-		<!-- topspin store embed -->
-		<script src="http://cf.topspin.net/javascripts/topspin_core.js?aId=36106&timestamp=1606" type="text/javascript"></script>
 
 		<!-- tab -->
 		<title>DEADCODE - NW Alternative Metal/Hard Rock</title>
@@ -134,97 +128,64 @@
 		
 		<!-- images start -->
 		<section id="images" class="pfblock pfimage2">
-			<div class="container" align="center">
+			<div class="container">
 				<div class="pfblock-header wow fadeInUp">
 					<h2 class="pfblock-title">images</h2>
 					<div class="pfblock-line"></div>
 				</div>
-
-				<div class="row">
-				  <div class="column">
-					<img src="assets/images/epk/1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
-				  </div>
-				  <div class="column">
-					<img src="assets/images/epk/2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
-				  </div>
-				  <div class="column">
-					<img src="assets/images/epk/3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
-				  </div>
-				  <div class="column">
-					<img src="assets/images/epk/4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
-				  </div>
-				</div>
-
-				<div id="myModal" class="modal">
-				  <span class="close cursor" onclick="closeModal()">&times;</span>
-				  <div class="modal-content">
-
-					<div class="mySlides">
-					  <div class="numbertext">
-						<a download href="assets/images/epk/1.jpg">Download .jpg</a> <br>
-						<a download href="assets/images/epk/1.jpg">Download .png</a> <br>
-						<a download href="assets/images/epk/1.jpg">Download .bmp</a> <br>
-						<a download href="assets/images/epk/1.jpg">Download .tif</a>
-					  </div>
-						<img src="assets/images/epk/1.jpg" style="width:100%">
-					</div>
-
-					<div class="mySlides">
-					  <div class="numbertext">
-						<a download href="assets/images/epk/1.jpg">Download .jpg</a> <br>
-						<a download href="assets/images/epk/1.jpg">Download .png</a> <br>
-						<a download href="assets/images/epk/1.jpg">Download .bmp</a> <br>
-						<a download href="assets/images/epk/1.jpg">Download .tif</a>
-					  </div>
-						<img src="assets/images/epk/2.jpg" style="width:100%">
-					</div>
-
-					<div class="mySlides">
-					  <div class="numbertext">
-						<a download href="assets/images/epk/1.jpg">Download .jpg</a> <br>
-						<a download href="assets/images/epk/1.jpg">Download .png</a> <br>
-						<a download href="assets/images/epk/1.jpg">Download .bmp</a> <br>
-						<a download href="assets/images/epk/1.jpg">Download .tif</a>
-					  </div>
-						<img src="assets/images/epk/3.jpg" style="width:100%">
-					</div>
-
-					<div class="mySlides">
-					  <div class="numbertext">
-						<a download href="assets/images/epk/1.jpg">Download .jpg</a> <br>
-						<a download href="assets/images/epk/1.jpg">Download .png</a> <br>
-						<a download href="assets/images/epk/1.jpg">Download .bmp</a> <br>
-						<a download href="assets/images/epk/1.jpg">Download .tif</a>
-					  </div>
-						<img src="assets/images/epk/4.jpg" style="width:100%">
-					</div>
-
-					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-					<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-					<div class="caption-container">
-					  <p id="caption"></p>
-					</div>
-
-					<div class="column">
-					  <img class="demo" src="assets/images/epk/1.jpg" onclick="currentSlide(1)" alt="Nature">
-					</div>
-
-					<div class="column">
-					  <img class="demo" src="assets/images/epk/2.jpg" onclick="currentSlide(2)" alt="Trolltunga">
-					</div>
-
-					<div class="column">
-					  <img class="demo" src="assets/images/epk/3.jpg" onclick="currentSlide(3)" alt="Mountains">
-					</div>
-
-					<div class="column">
-					  <img class="demo" src="assets/images/epk/4.jpg" onclick="currentSlide(4)" alt="Lights">
-					</div>
-				  </div>
-				</div>
 				
-				
+				<div class="row" align="center">						
+					<a title="Image 1" href="#"> 
+						<img class="thumbnail img-responsive" id="image-1" src="assets/images/epk/1.jpg">
+					</a> 
+				</div>				
+
+				<div class="hidden" id="img-repo">					
+					<!-- #image-1 -->
+					<div class="item" id="image-1">
+						<img class="thumbnail img-responsive" title="Image 11" src="assets/images/epk/1.jpg">
+					</div>
+					<div class="item" id="image-1">
+						<img class="thumbnail img-responsive" title="Image 12" src="assets/images/epk/2.jpg">
+					</div>
+					<div class="item" id="image-1">
+						<img class="thumbnail img-responsive" title="Image 13" src="assets/images/epk/3.jpg">
+					</div>
+					<div class="item" id="image-1">
+						<img class="thumbnail img-responsive" title="Image 13" src="assets/images/epk/4.jpg">
+					</div>
+					<div class="item" id="image-1">
+						<img class="thumbnail img-responsive" title="Image 13" src="assets/images/epk/5.jpg">
+					</div>
+					<div class="item" id="image-1">
+						<img class="thumbnail img-responsive" title="Image 13" src="assets/images/epk/deadcode.jpg">
+					</div>			  
+				</div>			  
+		
+				<div class="modal" id="modal-gallery" role="dialog">
+				  <div class="modal-dialog">
+					<div class="modal-content">
+					  <div class="modal-header">
+						  <button class="close" type="button" data-dismiss="modal">×</button>
+						  <h3 class="modal-title"></h3>
+					  </div>
+					  <div class="modal-body">
+						  <div id="modal-carousel" class="carousel">
+				   
+							<div class="carousel-inner">           
+							</div>
+							
+							<a class="carousel-control left" href="#modal-carousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+							<a class="carousel-control right" href="#modal-carousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+							
+						  </div>
+					  </div>
+					  <div class="modal-footer">
+						  <button class="btn btn-default" data-dismiss="modal">Close</button>
+					  </div>
+					</div>
+				  </div>			
+				</div>
 			</div>
 		</section>
 		<!-- images end -->
@@ -410,45 +371,43 @@
 		  ga('create', 'UA-73113234-1', 'auto');
 		  ga('send', 'pageview');
 		</script>
-
-		<!-- modal images -->
+		
 		<script>
-		function openModal() {
-		  document.getElementById('myModal').style.display = "block";
-		}
+		$(document).ready(function() {
+        
+		   /* activate the carousel */
+		   $("#modal-carousel").carousel({interval:false});
 
-		function closeModal() {
-		  document.getElementById('myModal').style.display = "none";
-		}
+		   /* change modal title when slide changes */
+		   $("#modal-carousel").on("slid.bs.carousel",       function () {
+				$(".modal-title")
+				.html($(this)
+				.find(".active img")
+				.attr("title"));
+		   });
 
-		var slideIndex = 1;
-		showSlides(slideIndex);
+		   /* when clicking a thumbnail */
+		   $(".row .thumbnail").click(function(){
+			var content = $(".carousel-inner");
+			var title = $(".modal-title");
+		  
+			content.empty();  
+			title.empty();
+		  
+			var id = this.id;  
+			 var repo = $("#img-repo .item");
+			 var repoCopy = repo.filter("#" + id).clone();
+			 var active = repoCopy.first();
+		  
+			active.addClass("active");
+			title.html(active.find("img").attr("title"));
+			content.append(repoCopy);
 
-		function plusSlides(n) {
-		  showSlides(slideIndex += n);
-		}
+			// show the modal
+			$("#modal-gallery").modal("show");
+		  });
 
-		function currentSlide(n) {
-		  showSlides(slideIndex = n);
-		}
-
-		function showSlides(n) {
-		  var i;
-		  var slides = document.getElementsByClassName("mySlides");
-		  var dots = document.getElementsByClassName("demo");
-		  var captionText = document.getElementById("caption");
-		  if (n > slides.length) {slideIndex = 1}
-		  if (n < 1) {slideIndex = slides.length}
-		  for (i = 0; i < slides.length; i++) {
-			slides[i].style.display = "none";
-		  }
-		  for (i = 0; i < dots.length; i++) {
-			dots[i].className = dots[i].className.replace(" active", "");
-		  }
-		  slides[slideIndex-1].style.display = "block";
-		  dots[slideIndex-1].className += " active";
-		  captionText.innerHTML = dots[slideIndex-1].alt;
-		}
+		});
 		</script>
 	</body>	
 	
