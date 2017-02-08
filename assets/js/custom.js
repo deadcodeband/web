@@ -77,17 +77,13 @@
 		//landing BG
 		//if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {	
 			//landing crossfaded images
+			/*"https://thumbs.gfycat.com/IcyLimpingGorilla-size_restricted.gif"*/
 			var images = [
-			  "https://thumbs.gfycat.com/IcyLimpingGorilla-size_restricted.gif"
-			  /*"assets/images/cover/2.jpg",
-			  "assets/images/cover/3.jpg",
-			  "assets/images/cover/4.jpg",
-			  "assets/images/cover/5.jpg",
-			  "assets/images/cover/6.jpg",
-			  "assets/images/cover/7.jpg",
-			  "assets/images/cover/8.jpg",
-			  "assets/images/cover/9.jpg",
-			  "assets/images/cover/10.jpg"*/
+			  "assets/images/cover/17.jpg",
+			  "assets/images/cover/16.jpg",
+			  "assets/images/cover/15.jpg",
+			  "assets/images/cover/14.jpg",
+			  "assets/images/cover/18.jpg"
 			];
 			
 			var $bg = $("#home"),
@@ -108,7 +104,7 @@
 			  function(){
 					$bg.css({backgroundImage : "url("+images[c%n]+")"}); 
 					
-					if(c == n){
+					if(c == n-1){
 						c = 0; //prevents overflow
 					}
 					
