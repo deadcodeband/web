@@ -323,9 +323,10 @@ textarea.form-control {
 }
 
 .pfblock-subtitle {
-	font-family: Raleway, "Times New Roman", Times, sans-serif;
+	font-weight: 400;
+	font-family: Raleway, "Verdana", Geneva, sans-serif;
 	font-style: normal;
-	font-size: 18px;
+	font-size: 19px;
 }
 
 .pfblock-line {
@@ -677,9 +678,9 @@ textarea.form-control {
 }
 
 .navbar-custom .navbar-brand {
-	font-weight: 700;
+	font-weight: 500;
 	font-size: 22px;
-    font-family: Raleway, "Times New Roman", Times, sans-serif;
+    font-family: Raleway, "Verdana", Geneva, sans-serif;
 }
 
 .navbar-custom .dropdown-menu {
