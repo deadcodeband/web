@@ -732,6 +732,15 @@ textarea.form-control {
 	margin-top: -40px;	
 }
 
+.soundcloud {
+	border: 0;
+	border-radius: 0;
+	height: 650px;
+	margin: 0;
+	margin-top: 0px;
+	margin-bottom: -20px;	
+}
+
 @media (min-width:500px){
 	.navbar-custom-footer{padding-left: 0px}
 }
