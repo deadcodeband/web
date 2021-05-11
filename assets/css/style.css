@@ -733,28 +733,31 @@ textarea.form-control {
 }
 
 .soundcloud {
-	border: 0;
-	border-radius: 0;
 	height: 650px;
-	margin: 0;
-	margin-top: 0px;
-	margin-bottom: -20px;	
+	width: 100%;
+	margin-top: 10px;	
+	padding-left: 40px;
+	padding-right: 40px;
 }
 
 @media (min-width:500px){
 	.navbar-custom-footer{padding-left: 0px}
+	.soundcloud{height: 375px}
 }
 
 @media (min-width:768px){
 	.navbar-custom-footer{padding-left: 20px}
+	.soundcloud{height: 480px}
 }
 
 @media (min-width:900px){
 	.navbar-custom-footer{padding-left: 30px}
+	.soundcloud{height: 550px}
 }
 
 @media (min-width:1200px){
 	.navbar-custom-footer{padding-left: 35px}
+	.soundcloud{height: 600px}
 }
 
 /* ---------------------------------------------- /*
