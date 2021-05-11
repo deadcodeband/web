@@ -127,19 +127,19 @@
 		$pf3.css({backgroundImage : "url(assets/images/backtest3.jpg)"});
 		
 		// parallax
-		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+		/*if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
 			$bg.css({'background-attachment': 'scroll'});
 			$tbg.css({'background-attachment': 'scroll'});
 			$pf1.css({'background-attachment': 'scroll'});
 			$pf2.css({'background-attachment': 'scroll'});
 			$pf3.css({'background-attachment': 'scroll'});
-		} else {
+		} else {*/
 			$bg.parallax('50%', 0.1);
 			$tbg.parallax('50%', 0.1);
 			$pf1.parallax('50%', 0.1);
 			$pf2.parallax('50%', 0.1);
 			$pf3.parallax('50%', 0.1);
-		}
+		//}
 		
 		//WOW Animation When You Scroll
 		wow = new WOW({

@@ -736,9 +736,20 @@ textarea.form-control {
 	height: 650px;
 	width: 100%;
 	margin-top: 10px;	
-	padding-left: 40px;
-	padding-right: 40px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
+
+@media (min-width:300px){
+	.navbar-custom-footer{padding-left: 0px}
+	.soundcloud{height: 200px}
+}
+
+@media (min-width:400px){
+	.navbar-custom-footer{padding-left: 0px}
+	.soundcloud{height: 300px}
+}
+
 
 @media (min-width:500px){
 	.navbar-custom-footer{padding-left: 0px}
