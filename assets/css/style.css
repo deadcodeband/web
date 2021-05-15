@@ -27,12 +27,16 @@ img {
 }
 
 a {
-	color: #E7746F;
+	color: white;
+}
+
+a:link {
+  color: white;
 }
 
 a:hover {
 	text-decoration: none;
-	color: #999;
+	color: #9a1711;
 }
 
 /* ---------------------------------------------- /*
@@ -733,6 +737,7 @@ textarea.form-control {
 }
 
 .soundcloud {
+	height: 650px;
 	height: 650px;
 	width: 100%;
 	margin-top: 10px;	
