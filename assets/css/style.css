@@ -32,15 +32,18 @@ a {
 
 a:link {
   color: white;
+  opacity: 0.7;
 }
 
 a:hover {
 	text-decoration: none;
 	color: #9a1711;
+	opacity: 0.7;
 }
 
 a:visited {
-	opacity: 0.0;
+	color: #9a1711;
+	opacity: 0.4;
 }
 
 /* ---------------------------------------------- /*
